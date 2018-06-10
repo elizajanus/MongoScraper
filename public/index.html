@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Onion Scraper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="jumbotron headline">
+      <h1>Onion Scraper</h1><img src="https://i.kinja-img.com/gawker-media/image/upload/s--4Aggfcp6--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/eti2h1r4wg0bqxctxenl.png">
+      <br><br><button type="button" class="btn btn-default"><a href="/scrape">Scrape</a></button><button type="button" class="btn btn-default" id="saved">Saved</button><button type="button" class="btn btn-default" id="home"><a href="/">Home</a></button>
+    </div>
+      <div class="panel panel-default" id="articles"></div>
+      
+  </body>
+  <style>
+      body { 
+        font-family: 'Song Myung', serif;
+        background-color: #F0FFFF;
+       }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      .headline {
+        text-align: center;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 100%;
+        height: 700px;
+      }
+      /*#notes {
+        float: right;
+        width: 30%;
+      }*/
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #F0FFFF;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+      #savearticle {
+        margin: 10px;
+      }
+      #deletearticle {
+        margin: 10px;
+      }
+      #opennote {
+        margin: 10px;
+      }
+    </style>
+</html>

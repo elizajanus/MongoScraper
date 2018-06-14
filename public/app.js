@@ -68,7 +68,7 @@ $(document).on("click", "#saved", function() {
     for (var i = 0; i < data.length; i++) {
      console.log(data);
       // Display the apropos information on the page
-      $("#articles").append(`<div class="well"><p data-id=${data[i]._id} id="article"><b>${data[i].title}</b><br/>${data[i].summary}<br/><a href="${data[i].link}">${data[i].link}</a></p></div><button class="btn btn-default" id="savearticle" data-id=${data[i]._id}>Save</button><button class="btn btn-default" data-target="#itsanotemodal" data-toggle="modal" data-id=${data[i]._id} id="opennote">Add/Delete Note</button>
+      $("#articles").append(`<div class="well"><p data-id=${data[i]._id} id="article"><b>${data[i].title}</b><br/>${data[i].summary}<br/><a href="${data[i].link}">${data[i].link}</a></p></div><button class="btn btn-default" id="savearticle" data-id=${data[i]._id}>Save</button><button class="btn btn-default" id="deletearticle" data-id=${data[i]._id}>Delete</button><button class="btn btn-default" data-target="#itsanotemodal" data-toggle="modal" data-id=${data[i]._id} id="opennote">Add/Delete Note</button>
       <div class="modal fade bs-example-modal-lg" id="itsanotemodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-id=${data[i].id}>
           <div class="modal-dialog modal-lg">
             <div class="modal-content" id="contentofmodal">
